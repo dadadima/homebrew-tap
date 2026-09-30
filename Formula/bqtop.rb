@@ -1,28 +1,28 @@
 class Bqtop < Formula
   desc "htop for BigQuery: live jobs, principals, projects, hot tables and cost in your terminal"
   homepage "https://github.com/dadadima/bqtop"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dadadima/bqtop/releases/download/v0.3.5/bqtop-0.3.5-macos-arm64.tar.gz"
-      sha256 "0e29440bbfa1aaeafebbc71c277ae22d97962a3e736ef8cef65d403b762e8bf9"
+      url "https://github.com/dadadima/bqtop/releases/download/v0.3.6/bqtop-0.3.6-macos-arm64.tar.gz"
+      sha256 "7772b9d1d3b36765945443a50f0f96ea84f155ddbe5a6d6bd4737a9d3dadaac6"
     end
     on_intel do
-      url "https://github.com/dadadima/bqtop/releases/download/v0.3.5/bqtop-0.3.5-macos-x86_64.tar.gz"
-      sha256 "06388ecb0bec020fbaf3fe8f651ea85bf49085ef4b4a593c74fb5bb76e3d4633"
+      url "https://github.com/dadadima/bqtop/releases/download/v0.3.6/bqtop-0.3.6-macos-x86_64.tar.gz"
+      sha256 "1ecc0e80aaf7fc189348a3bcbeacb6a23ad17fadac07bad19fb47e045b493df1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dadadima/bqtop/releases/download/v0.3.5/bqtop-0.3.5-linux-arm64.tar.gz"
-      sha256 "4f90b8b35684a5e1b10bbd576898b2acaf443942e502deed2d8f97d320b366b8"
+      url "https://github.com/dadadima/bqtop/releases/download/v0.3.6/bqtop-0.3.6-linux-arm64.tar.gz"
+      sha256 "552444fe1a2f771b9fd8431926e6a75d0dd98e84962ec213c9e1e6f2c3f1c068"
     end
     on_intel do
-      url "https://github.com/dadadima/bqtop/releases/download/v0.3.5/bqtop-0.3.5-linux-x86_64.tar.gz"
-      sha256 "741d4ba60cca6969a0cc9e97b2c9778028e027860556be266df488b61311e185"
+      url "https://github.com/dadadima/bqtop/releases/download/v0.3.6/bqtop-0.3.6-linux-x86_64.tar.gz"
+      sha256 "8cc5e5f7a4ebb01503898ba148b0043fe24d281560e4617a59a2fca3de1a7529"
     end
   end
 
@@ -31,6 +31,6 @@ class Bqtop < Formula
   end
 
   test do
-    assert_match "bqtop 0.3.5", shell_output("#{bin}/bqtop --version")
+    assert_match "bqtop 0.3.6", shell_output("#{bin}/bqtop --version")
   end
 end
